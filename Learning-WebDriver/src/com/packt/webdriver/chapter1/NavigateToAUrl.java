@@ -8,6 +8,6 @@ public class NavigateToAUrl {
 		System.setProperty("webdriver.gecko.driver","D:\\Selenium\\geckodriver.exe");
 		WebDriver driver = new FirefoxDriver();
 		driver.get("http://www.google.com");
-		//driver.quit();
+		driver.quit();
 	}
 }
