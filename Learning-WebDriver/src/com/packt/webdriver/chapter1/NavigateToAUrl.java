@@ -10,12 +10,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
+//import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class NavigateToAUrl {
 	public static void main(String[] args) {
 		WebDriver driver;
-		int driverToChoose = 0;
+		int driverToChoose = 2;
 		switch (driverToChoose) {
 		case 0:
 			System.setProperty("webdriver.gecko.driver", "D:\\Selenium\\geckodriver.exe");
@@ -27,8 +27,8 @@ public class NavigateToAUrl {
 			break;
 		case 2:
 			System.setProperty("webdriver.ie.driver", "D:\\Selenium\\IEDriverServer.exe");
-			DesiredCapabilities cap = new DesiredCapabilities();
-			cap.setCapability(InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION, true);
+			//DesiredCapabilities cap = new DesiredCapabilities();
+			//cap.setCapability(InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION, true);
 			driver = new InternetExplorerDriver();
 			break;
 		case 3:
@@ -39,7 +39,6 @@ public class NavigateToAUrl {
 			driver = new FirefoxDriver();
 		}
 
-		// WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get("http://www.google.com");
 		WebElement el = driver.findElement(By.name("q"));
