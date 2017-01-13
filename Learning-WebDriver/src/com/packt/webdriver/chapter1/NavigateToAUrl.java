@@ -41,7 +41,7 @@ public class NavigateToAUrl {
 
 		// WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.get("http://www.google.com");
+		driver.get("http://www.google.com/ncr");
 		WebElement el = driver.findElement(By.name("q"));
 		el.sendKeys("Microsoft");
 		el.sendKeys(Keys.RETURN);
