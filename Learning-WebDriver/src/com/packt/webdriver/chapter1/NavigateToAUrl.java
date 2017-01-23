@@ -36,7 +36,7 @@ public class NavigateToAUrl {
 			driver = new EdgeDriver();
 			break;
 		default:
-			driver = new FirefoxDriver();
+			driver = new FirefoxDriver();;
 		}
 
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
