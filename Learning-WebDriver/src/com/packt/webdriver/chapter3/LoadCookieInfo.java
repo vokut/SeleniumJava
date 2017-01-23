@@ -14,7 +14,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class LoadCookieInfo {
-	@SuppressWarnings("deprecation")
 	public static void main(String[] args) throws ParseException {
 		DateFormat df = new SimpleDateFormat("EEE MMM dd kk:mm:ss z yyyy");
 		//Date myDate = df.parse("Wed Jan 23 15:29:56 EEST 2019");
