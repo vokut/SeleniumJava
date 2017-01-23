@@ -45,6 +45,7 @@ public class NavigateToAUrl {
 		el.sendKeys("Microsoft");
 		el.sendKeys(Keys.RETURN);
 		driver.findElement(By.linkText("Microsoft - Wikipedia"));
+		//Closes the browser
 		driver.quit();
 	}
 }
